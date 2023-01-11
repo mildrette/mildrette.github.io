@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    height: 90vh;
+    width: 60vw;
+}
+
+header{
+    color:yellow;
+    background-color: green;
+    height: 60px;
+    font-size: large;
+    font-weight: 400;
+    text-align: center;
+};
