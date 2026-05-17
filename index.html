@@ -1,165 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mildred Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mildred Fonka</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <div class="glow purple"></div>
-  <div class="glow blue"></div>
+<canvas id="particles"></canvas>
 
-  <div id="particles"></div>
+<nav>
+  <h1>Mildred Fonka</h1>
 
-  <nav>
-    <h1>Mildred.dev</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="nav-actions">
+    <select onchange="setLang(this.value)">
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="es">ES</option>
+      <option value="fa">FA</option>
+    </select>
+    <button onclick="toggleTheme()">🌓</button>
+  </div>
+</nav>
 
-  <section class="hero">
-    <div class="hero-content">
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1 class="reveal">Mildred <span>Fonka</span></h1>
+      <p class="subtitle reveal" id="desc">Android & Frontend Developer specializing in scalable mobile systems, UI engineering, and open-source ecosystems.</p>
 
-      <div>
-      <p style="margin-bottom:20px;color:#aaa;">Android & Frontend Developer</p>
-
-      <h2>
-        Hi, I'm
-        <span class="gradient">Ndadem Mildred Fonka</span>
-      </h2>
-
-      <p>
-        Building Android apps, modern websites, and user-focused digital experiences using Kotlin, React, JavaScript, and Python.
-      </p>
-
-      <div class="buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/mildrette" target="_blank" class="btn secondary">GitHub</a>
+      <div class="cta reveal">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="https://github.com/mildrette">GitHub</a>
       </div>
     </div>
 
-      <div class="hero-image">
-        <div class="profile-card">
-          <img src="/images/mimi.jpeg" alt="Profile Image">
-        </div>
+    <img class="profile reveal" src="/images/mi.png" />
+  </div>
+</section>
 
-        <div class="floating-badge">
-          Kotlin • React • Android
-        </div>
-      </div>
+<section id="about" class="reveal">
+  <div class="title">About Me</div>
 
-    </div>
-  </section>
-
-  <section id="about">
+  <div class="grid">
+    <!-- LEFT: STORY -->
     <div class="card">
-      <h3>About Me</h3>
-
-      <p style="color:#ccc;line-height:1.8;font-size:18px;">
-        I’m an Android and frontend developer passionate about building responsive websites, modern interfaces, and mobile experiences that solve real problems.
+      <h3 style="margin-bottom:10px; font-family:Unbounded;">Developer Profile</h3>
+      <p style="line-height:1.8; color:var(--muted);">
+        I am an Android & Frontend Engineer focused on building scalable, real-world communication systems and modern web applications.
+        My work blends mobile engineering (Kotlin) with frontend architecture (React / JavaScript), with a strong emphasis on clean UI systems, performance, and usability.
       </p>
 
-      <br>
-
-      <p style="color:#999;line-height:1.8;">
-        I’ve contributed to open-source projects like DekuSMS and RelaySMS while continuously improving my Android development skills with Kotlin. I enjoy clean UI design, smooth user experiences, and creating products people actually enjoy using.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h3 style="text-align:center;margin-bottom:50px;">Skills</h3>
-
-    <div class="grid">
-      <div class="card skills">
-        <h4>Frontend</h4>
-        <span>React</span>
-        <span>Next.js</span>
-        <span>JavaScript</span>
-        <span>HTML/CSS</span>
-        <span>Tailwind CSS</span>
-      </div>
-
-      <div class="card skills">
-        <h4>Android</h4>
-        <span>Kotlin</span>
-        <span>Android Studio</span>
-        <span>XML Layouts</span>
-        <span>Mobile UI</span>
-      </div>
-
-      <div class="card skills">
-        <h4>Tools</h4>
-        <span>Git/GitHub</span>
-        <span>Figma</span>
-        <span>Canva</span>
-        <span>Python</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h3 style="text-align:center;margin-bottom:50px;">Projects & Contributions</h3>
-
-    <div class="grid">
-      <div class="card">
-        <h4>DekuSMS</h4>
-        <p>Contributed localization support and improved accessibility for users.</p>
-        <div class="project-tech">Android • Kotlin • Open Source</div>
-      </div>
-
-      <div class="card">
-        <h4>RelaySMS</h4>
-        <p>Worked on translation and multilingual user accessibility improvements.</p>
-        <div class="project-tech">Android • Open Source</div>
-      </div>
-
-      <div class="card">
-        <h4>Telemetry Dashboard</h4>
-        <p>Built responsive dashboard interfaces with modern frontend components.</p>
-        <div class="project-tech">React • UI/UX</div>
-      </div>
-
-      <div class="card">
-        <h4>Next.js Blog</h4>
-        <p>Created a modern blog platform using reusable components and routing.</p>
-        <div class="project-tech">Next.js • SEO • React</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="card" style="text-align:center;">
-      <h3>Let's Build Something Great</h3>
-
-      <p style="color:#aaa; margin:30px 0;">
-        Open to collaborations, internships, freelance opportunities, and open-source contributions.
+      <p style="margin-top:12px; line-height:1.8; color:var(--muted);">
+        I actively contribute to open-source ecosystems like DekuSMS and RelaySMS, where I work on localization, accessibility, and improving user experience across multilingual platforms.
       </p>
 
-      <div class="buttons">
-        <a href="mailto:mildredfonka@gmail.com" class="btn primary">Email Me</a>
-        <a href="https://github.com/mildrette" target="_blank" class="btn secondary">GitHub</a>
+      <p style="margin-top:12px; line-height:1.8; color:var(--muted);">
+        Currently, I am expanding into backend systems and Python development to become a full-stack engineer capable of building end-to-end distributed applications.
+      </p>
+    </div>
+
+    <!-- RIGHT: STATS -->
+    <div class="card">
+      <h3 style="margin-bottom:10px; font-family:Unbounded;">Highlights</h3>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div class="card" style="padding:14px; text-align:center;">
+          <h2 style="color:var(--yellow);">3+</h2>
+          <small>Years Learning</small>
+        </div>
+
+        <div class="card" style="padding:14px; text-align:center;">
+          <h2 style="color:var(--yellow);">5+</h2>
+          <small>Projects</small>
+        </div>
+
+        <div class="card" style="padding:14px; text-align:center;">
+          <h2 style="color:var(--yellow);">2</h2>
+          <small>Open Source Apps</small>
+        </div>
+
+        <div class="card" style="padding:14px; text-align:center;">
+          <h2 style="color:var(--yellow);">∞</h2>
+          <small>Learning Mindset</small>
+        </div>
+      </div>
+
+      <div style="margin-top:14px; padding:12px; border-left:3px solid var(--yellow); color:var(--muted); line-height:1.6;">
+        Focus: Android Systems · UI Engineering · Open Source · Scalable Frontend Architecture
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    © 2026 NMF
-  </footer>
+<section id="experience" class="reveal">
+  <div class="title">Experience</div>
 
-  <script src="index.js">
-    
-  </script>
+  <div class="card">
+    <h3 style="font-family:Unbounded; margin-bottom:18px;">Engineering Experience Timeline</h3>
+
+    <div style="display:flex; flex-direction:column; gap:18px; position:relative; padding-left:22px; border-left:2px solid rgba(184,134,11,0.35);">
+
+      <div style="position:relative;">
+        <div style="position:absolute; left:-11px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--yellow);"></div>
+        <div class="card" style="padding:18px;">
+          <h4 style="margin-bottom:4px;">Open Source Contributor — DekuSMS</h4>
+          <small style="color:var(--muted)">Android · Localization · Communication Systems</small>
+          <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+            Worked on improving multilingual support, UI clarity, and accessibility in a real-world SMS gateway used in production environments.
+          </p>
+        </div>
+      </div>
+
+      <div style="position:relative;">
+        <div style="position:absolute; left:-11px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--yellow);"></div>
+        <div class="card" style="padding:18px;">
+          <h4 style="margin-bottom:4px;">Open Source Contributor — RelaySMS</h4>
+          <small style="color:var(--muted)">Messaging · UX · Translation Systems</small>
+          <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+            Contributed to improving user experience flows, translation layers, and system reliability for global communication use cases.
+          </p>
+        </div>
+      </div>
+
+      <div style="position:relative;">
+        <div style="position:absolute; left:-11px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--yellow);"></div>
+        <div class="card" style="padding:18px;">
+          <h4 style="margin-bottom:4px;">Frontend Developer — React / Next.js</h4>
+          <small style="color:var(--muted)">UI Engineering · Dashboards · Web Apps</small>
+          <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+            Built responsive dashboards, blog platforms, and UI systems with focus on performance, scalability, and reusable architecture.
+          </p>
+        </div>
+      </div>
+
+      <div style="position:relative;">
+        <div style="position:absolute; left:-11px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--yellow);"></div>
+        <div class="card" style="padding:18px;">
+          <h4 style="margin-bottom:4px;">Android Developer — Kotlin (Learning → Intermediate)</h4>
+          <small style="color:var(--muted)">Mobile UI · Architecture · System Design</small>
+          <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+            Building Android applications with focus on scalable architecture, UI systems, and real-world messaging features.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <div class="title">Projects & Impact</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>DekuSMS</h3>
+      <small style="color:var(--muted)">Android · Open Source · Communication Systems</small>
+      <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+        Contributed to a production-level SMS gateway system enabling secure and scalable message routing with multilingual support.
+      </p>
+      <div style="margin-top:10px;">
+        <span class="tag">Kotlin</span>
+        <span class="tag">Android</span>
+        <span class="tag">Localization</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>RelaySMS</h3>
+      <small style="color:var(--muted)">Messaging · Open Source · UX Engineering</small>
+      <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+        Improved user experience and translation layers for a scalable messaging system designed for global accessibility.
+      </p>
+      <div style="margin-top:10px;">
+        <span class="tag">Android</span>
+        <span class="tag">UX</span>
+        <span class="tag">Translation</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Telemetry Dashboard</h3>
+      <small style="color:var(--muted)">Frontend · Data Visualization</small>
+      <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+        Built a responsive analytics dashboard with reusable UI components and real-time data visualization structure.
+      </p>
+      <div style="margin-top:10px;">
+        <span class="tag">React</span>
+        <span class="tag">UI/UX</span>
+        <span class="tag">Dashboards</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Next.js Blog Platform</h3>
+      <small style="color:var(--muted)">Web · SEO · Full Frontend System</small>
+      <p style="margin-top:10px; color:var(--muted); line-height:1.6;">
+        Designed a modern blog system with routing, SEO optimization, and reusable architecture components.
+      </p>
+      <div style="margin-top:10px;">
+        <span class="tag">Next.js</span>
+        <span class="tag">SEO</span>
+        <span class="tag">Architecture</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="title">Skills</div>
+  <div class="card">
+    <h3>Frontend Engineering</h3>
+    <span class="tag">React</span>
+    <span class="tag">Next.js</span>
+    <span class="tag">JavaScript (ES6+)</span>
+    <span class="tag">HTML5</span>
+    <span class="tag">CSS3</span>
+
+    <h3 style="margin-top:15px">Android Development</h3>
+    <span class="tag">Kotlin</span>
+    <span class="tag">Android Studio</span>
+    <span class="tag">XML UI</span>
+
+    <h3 style="margin-top:15px">Tools & Others</h3>
+    <span class="tag">Git & GitHub</span>
+    <span class="tag">Figma</span>
+    <span class="tag">Python (Learning)</span>
+  </div>
+</section>
+
+<section id="contact" class="contact-section reveal">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <p class="section-subtitle">
+      Let’s build something great together. Open to internships, freelance work, and open-source collaboration.
+    </p>
+
+    <div class="glass-card">
+      <a href="mailto:mildredfonka@gmail.com" class="glass-item">
+        <div>
+          <span class="label">Email</span>
+          <span class="value">mildredfonka@gmail.com</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a href="https://github.com/mildrette" target="_blank" class="glass-item">
+        <div>
+          <span class="label">GitHub</span>
+          <span class="value">github.com/mildrette</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="pill">
+      Open for opportunities • Let’s collaborate
+    </div>
+  </div>
+</section>
+
+<footer>
+© 2026 NMF
+</footer>
+
+<script src="index.js">
+
+</script>
 
 </body>
 </html>
