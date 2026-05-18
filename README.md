@@ -1,4 +1,4 @@
-# Mildred Fonka — Portfolio Website
+# Mildred Fonka
 
 Personal portfolio website for **Mildred Fonka**, a Junior Android Developer and Frontend Engineer based in Bamenda, Cameroon.
 
