@@ -3,58 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mildred Fonka — Junior Android Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<title>Mildred Fonka — Junior Android Developer & Web Developer</title>
+  <link rel="icon" href="/images/milogo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  *,
+   *::before,
+    *::after { 
+      margin: 0;
+       padding: 0; 
+       box-sizing: border-box;
+       }
 
   :root {
-    --bg: #060A10;
-    --bg2: #0D1520;
-    --accent: #00FFB2;
-    --accent2: #0066FF;
-    --text: #E8EDF5;
-    --muted: rgba(232,237,245,0.45);
-    --border: rgba(255,255,255,0.07);
-    --card: rgba(255,255,255,0.03);
+    --brown:       #3C1F0F;
+    --brown-mid:   #6B3A22;
+    --brown-light: #A0622A;
+    --cream:       #F5EDD8;
+    --cream-dark:  #EAD9BA;
+    --yellow:      #E8B84B;
+    --yellow-soft: #F2D07A;
+    --white:       #FDFAF4;
+    --navy:        #0D1F3C;
+    --navy-mid:    #1A3558;
+    --forest:      #1B4332;
+    --forest-mid:  #2D6A4F;
+    --forest-light:#52B788;
+    --text-dark:   #1C0A00;
+    --text-mid:    #5C3D2E;
+    --text-muted:  #9B7B5E;
+    --border:      rgba(60,31,15,0.12);
   }
 
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--bg);
-    color: var(--text);
+    background: var(--cream);
+    color: var(--text-dark);
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     line-height: 1.7;
     overflow-x: hidden;
   }
 
-  /* NOISE TEXTURE */
   body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.4;
-  }
-
-  /* GRID */
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(0,255,178,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,255,178,0.03) 1px, transparent 1px);
-    background-size: 72px 72px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233C1F0F' fill-opacity='0.025'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     pointer-events: none;
     z-index: 0;
   }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -62,40 +62,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: rgba(6,10,16,0.85);
+    padding: 18px 64px;
+    background: rgba(245,237,216,0.93);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
   }
 
   .nav-logo {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 800;
-    font-size: 1.1rem;
-    letter-spacing: -0.5px;
+    font-size: 1.3rem;
+    color: var(--brown);
   }
+  .nav-logo span { color: var(--yellow); }
 
-  .nav-logo span { color: var(--accent); }
-
-  .nav-links {
-    display: flex;
-    gap: 36px;
-    list-style: none;
-  }
-
-  .nav-links a {
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-
-  .nav-links a:hover { color: var(--text); }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { color: var(--text-mid); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--brown); }
 
   .nav-cta {
-    background: var(--accent);
-    color: var(--bg);
+    background: var(--brown);
+    color: var(--cream);
     padding: 10px 22px;
     border-radius: 8px;
     font-weight: 600;
@@ -103,24 +90,17 @@
     text-decoration: none;
     transition: all 0.2s;
   }
+  .nav-cta:hover { background: var(--brown-mid); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(60,31,15,0.2); }
 
-  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,255,178,0.25); }
-
-  /* SECTIONS */
   section { position: relative; z-index: 1; }
-
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 60px;
-  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 64px; }
 
   /* HERO */
   #hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 120px 60px 80px;
+    padding: 120px 64px 80px;
     max-width: 1100px;
     margin: 0 auto;
   }
@@ -128,7 +108,7 @@
   .hero-inner {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
-    gap: 80px;
+    gap: 72px;
     align-items: center;
     width: 100%;
   }
@@ -137,519 +117,253 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 6px 14px;
+    padding: 7px 16px;
     border-radius: 100px;
-    border: 1px solid rgba(0,255,178,0.25);
-    background: rgba(0,255,178,0.06);
-    font-size: 0.72rem;
-    color: var(--accent);
-    letter-spacing: 0.12em;
+    border: 1.5px solid var(--yellow);
+    background: rgba(232,184,75,0.1);
+    font-size: 0.7rem;
+    color: var(--brown-mid);
+    letter-spacing: 0.14em;
     font-weight: 600;
     margin-bottom: 28px;
+    text-transform: uppercase;
   }
 
-  .hero-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--accent);
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.2; }
-  }
+  .hero-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--forest-light); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.2} }
 
   .hero-name {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 800;
-    font-size: clamp(3rem, 5vw, 5rem);
-    line-height: 0.95;
-    letter-spacing: -3px;
-    margin-bottom: 20px;
-  }
-
-  .hero-name .line2 {
-    background: linear-gradient(120deg, var(--accent) 0%, #7FFFD4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .hero-title {
-    font-size: 1rem;
-    color: var(--muted);
-    font-weight: 400;
-    margin-bottom: 28px;
-    letter-spacing: 0.02em;
-  }
-
-  .hero-bio {
-    font-size: 1rem;
-    color: rgba(232,237,245,0.65);
-    line-height: 1.85;
-    margin-bottom: 40px;
-    max-width: 480px;
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 48px;
-  }
-
-  .btn-primary {
-    background: var(--accent);
-    color: var(--bg);
-    padding: 14px 28px;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: all 0.2s;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(0,255,178,0.25);
-  }
-
-  .btn-ghost {
-    border: 1px solid rgba(255,255,255,0.12);
-    color: rgba(232,237,245,0.7);
-    padding: 14px 28px;
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .btn-ghost:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: rgba(0,255,178,0.05);
-  }
-
-  .hero-links {
-    display: flex;
-    gap: 24px;
-  }
-
-  .hero-links a {
-    color: var(--muted);
-    font-size: 0.8rem;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .hero-links a:hover { color: var(--accent); }
-
-  /* HERO RIGHT */
-  .hero-right {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .stat-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 20px 24px;
-    transition: all 0.3s;
-  }
-
-  .stat-card:hover {
-    border-color: rgba(0,255,178,0.2);
-    background: rgba(0,255,178,0.04);
-    transform: translateX(4px);
-  }
-
-  .stat-label {
-    font-size: 0.72rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    line-height: 0.92;
+    letter-spacing: -2px;
+    color: var(--brown);
     margin-bottom: 6px;
   }
+  .hero-name .accent { color: var(--yellow); font-style: italic; }
 
-  .stat-value {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--text);
+  .hero-title { font-size: 1rem; color: var(--text-muted); font-weight: 400; margin-bottom: 28px; }
+
+  .hero-bio { font-size: 1rem; color: var(--text-mid); line-height: 1.9; margin-bottom: 40px; max-width: 480px; }
+
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+
+  .btn-primary { background: var(--brown); color: var(--cream); padding: 14px 28px; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: all 0.2s; }
+  .btn-primary:hover { background: var(--brown-mid); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(60,31,15,0.2); }
+
+  .btn-forest { background: var(--forest); color: var(--cream); padding: 14px 28px; border-radius: 10px; font-weight: 500; font-size: 0.9rem; text-decoration: none; transition: all 0.2s; }
+  .btn-forest:hover { background: var(--forest-mid); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(27,67,50,0.25); }
+
+  .hero-links { display: flex; gap: 24px; }
+  .hero-links a { color: var(--text-muted); font-size: 0.82rem; text-decoration: none; transition: color 0.2s; font-weight: 500; }
+  .hero-links a:hover { color: var(--brown); }
+
+  .hero-right { display: flex; flex-direction: column; gap: 14px; }
+
+  .stat-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 22px;
+    transition: all 0.3s;
+    border-left: 4px solid transparent;
+  }
+  .stat-card:nth-child(1) { border-left-color: var(--yellow); }
+  .stat-card:nth-child(2) { border-left-color: var(--forest-light); }
+  .stat-card:nth-child(3) { border-left-color: var(--navy-mid); }
+  .stat-card:nth-child(4) { border-left-color: var(--brown-light); }
+  .stat-card:hover { transform: translateX(6px); box-shadow: 0 4px 20px rgba(60,31,15,0.08); }
+
+  .stat-label { font-size: 0.68rem; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 5px; font-weight: 600; }
+  .stat-value { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1rem; color: var(--brown); }
+  .stat-sub { font-size: 0.78rem; color: var(--text-muted); margin-top: 3px; }
+
+  /* IMPACT NUMBERS */
+  #impact {
+    padding: 60px 0;
+    background: var(--brown);
+    border-top: 1px solid rgba(255,255,255,0.08);
   }
 
-  .stat-sub {
-    font-size: 0.8rem;
-    color: var(--muted);
-    margin-top: 4px;
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
   }
 
-  /* SECTION HEADER */
-  .section-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    color: var(--accent);
-    font-weight: 600;
-    margin-bottom: 12px;
-    text-transform: uppercase;
+  .impact-item {
+    text-align: center;
+    padding: 32px 20px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+  .impact-item:last-child { border-right: none; }
+
+  .impact-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--yellow);
+    line-height: 1;
+    margin-bottom: 8px;
   }
 
-  .section-title {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-    line-height: 1.1;
-    letter-spacing: -1px;
-    margin-bottom: 16px;
-  }
+  .impact-label { font-size: 0.8rem; color: rgba(245,237,216,0.6); letter-spacing: 0.05em; }
 
-  .section-sub {
-    color: var(--muted);
-    font-size: 0.95rem;
-    max-width: 500px;
-    margin-bottom: 60px;
-  }
+  /* SECTION HEADERS */
+  .section-label { font-size: 0.65rem; letter-spacing: 0.2em; color: var(--forest-mid); font-weight: 700; margin-bottom: 10px; text-transform: uppercase; }
+  .section-title { font-family: 'Playfair Display', serif; font-weight: 800; font-size: clamp(2rem, 3vw, 2.8rem); line-height: 1.1; letter-spacing: -1px; color: var(--brown); margin-bottom: 14px; }
+  .section-sub { color: var(--text-muted); font-size: 0.95rem; max-width: 500px; margin-bottom: 56px; line-height: 1.7; }
 
   /* SKILLS */
-  #skills {
-    padding: 100px 0;
-    border-top: 1px solid var(--border);
-  }
+  #skills { padding: 100px 0; background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
   .skill-group {
-    background: var(--card);
+    background: var(--cream);
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 28px;
     transition: all 0.3s;
   }
+  .skill-group:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(60,31,15,0.1); border-color: var(--yellow); }
 
-  .skill-group:hover {
-    border-color: rgba(0,255,178,0.2);
-    background: rgba(0,255,178,0.03);
-    transform: translateY(-4px);
-  }
-
-  .skill-icon {
-    font-size: 1.8rem;
-    margin-bottom: 16px;
-  }
-
-  .skill-group-title {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 16px;
-    color: var(--text);
-  }
-
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .skill-tag {
-    font-size: 0.75rem;
-    padding: 5px 12px;
-    border-radius: 100px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    color: rgba(232,237,245,0.7);
-    font-weight: 500;
-    transition: all 0.2s;
-  }
-
-  .skill-tag:hover {
-    background: rgba(0,255,178,0.08);
-    border-color: rgba(0,255,178,0.2);
-    color: var(--accent);
-  }
+  .skill-icon { font-size: 2rem; margin-bottom: 14px; }
+  .skill-group-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 16px; color: var(--brown); }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-tag { font-size: 0.74rem; padding: 5px 12px; border-radius: 100px; background: var(--white); border: 1px solid var(--border); color: var(--text-mid); font-weight: 500; transition: all 0.2s; }
+  .skill-tag:hover { background: var(--yellow-soft); border-color: var(--yellow); color: var(--brown); }
 
   /* PROJECTS */
-  #projects {
-    padding: 100px 0;
-    border-top: 1px solid var(--border);
-  }
+  #projects { padding: 100px 0; border-top: 1px solid var(--border); }
 
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
+  .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
   .project-card {
-    background: var(--card);
+    background: var(--white);
     border: 1px solid var(--border);
     border-radius: 20px;
-    padding: 32px;
+    padding: 28px;
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
   }
-
-  .project-card::before {
+  .project-card::after {
     content: '';
     position: absolute;
-    top: 0; right: 0;
-    width: 150px; height: 150px;
-    background: radial-gradient(circle, rgba(0,255,178,0.06) 0%, transparent 70%);
+    bottom: 0; right: 0;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, rgba(232,184,75,0.07) 0%, transparent 70%);
     pointer-events: none;
   }
+  .project-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(60,31,15,0.12); border-color: var(--yellow); }
 
-  .project-card:hover {
-    border-color: rgba(0,255,178,0.2);
-    transform: translateY(-6px);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  .project-card.navy-card {
+    background: var(--navy);
+    border-color: var(--navy-mid);
   }
+  .project-card.navy-card:hover { border-color: var(--yellow); box-shadow: 0 20px 60px rgba(13,31,60,0.3); }
+  .project-card.navy-card .project-title { color: var(--cream); }
+  .project-card.navy-card .project-desc { color: rgba(245,237,216,0.6); }
+  .project-card.navy-card .stack-tag { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); color: rgba(245,237,216,0.7); }
 
-  .project-card.featured {
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
-    align-items: center;
+  .project-card.forest-card {
+    background: var(--forest);
+    border-color: var(--forest-mid);
   }
+  .project-card.forest-card:hover { border-color: var(--yellow); }
+  .project-card.forest-card .project-title { color: var(--cream); }
+  .project-card.forest-card .project-desc { color: rgba(245,237,216,0.6); }
+  .project-card.forest-card .stack-tag { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); color: rgba(245,237,216,0.7); }
+  .project-card.forest-card .project-tag { background: rgba(232,184,75,0.15); border-color: rgba(232,184,75,0.4); color: var(--yellow); }
+
+  .project-card.wide { grid-column: span 2; }
+
+  .wide-inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
 
   .project-tag {
     display: inline-block;
     font-size: 0.68rem;
-    padding: 4px 10px;
+    padding: 4px 12px;
     border-radius: 100px;
-    background: rgba(0,255,178,0.08);
-    border: 1px solid rgba(0,255,178,0.2);
-    color: var(--accent);
+    background: rgba(27,67,50,0.08);
+    border: 1px solid rgba(27,67,50,0.2);
+    color: var(--forest-mid);
     letter-spacing: 0.08em;
-    font-weight: 600;
-    margin-bottom: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
     text-transform: uppercase;
   }
 
-  .project-title {
-    font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-    letter-spacing: -0.5px;
-  }
+  .project-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; margin-bottom: 10px; letter-spacing: -0.3px; color: var(--brown); }
+  .project-desc { color: var(--text-mid); font-size: 0.855rem; line-height: 1.75; margin-bottom: 18px; }
 
-  .project-desc {
-    color: var(--muted);
-    font-size: 0.875rem;
-    line-height: 1.7;
-    margin-bottom: 20px;
-  }
-
-  .project-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .stack-tag {
-    font-size: 0.72rem;
-    padding: 4px 10px;
-    border-radius: 6px;
-    background: rgba(255,255,255,0.06);
-    color: rgba(232,237,245,0.6);
-  }
-
-  .project-visual {
-    background: rgba(0,255,178,0.04);
-    border: 1px solid rgba(0,255,178,0.1);
-    border-radius: 12px;
-    height: 200px;
-    display: flex;
+  .project-link {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: 3rem;
+    gap: 5px;
+    font-size: 0.78rem;
+    color: var(--forest-mid);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 14px;
+    transition: color 0.2s;
   }
+  .project-link:hover { color: var(--brown); }
+  .navy-card .project-link, .forest-card .project-link { color: var(--yellow-soft); }
+
+  .project-stack { display: flex; flex-wrap: wrap; gap: 7px; }
+  .stack-tag { font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; background: rgba(60,31,15,0.06); color: var(--text-mid); border: 1px solid var(--border); }
+
+  .project-visual { background: rgba(232,184,75,0.08); border: 1px solid rgba(232,184,75,0.2); border-radius: 14px; height: 160px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
 
   /* ABOUT */
-  #about {
-    padding: 100px 0;
-    border-top: 1px solid var(--border);
-  }
+  #about { padding: 100px 0; background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); }
+  #about .section-label { color: var(--yellow-soft); }
+  #about .section-title { color: var(--cream); }
+  #about .section-sub { color: rgba(245,237,216,0.5); }
 
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-  }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 
-  .about-text p {
-    color: rgba(232,237,245,0.65);
-    line-height: 1.9;
-    margin-bottom: 20px;
-    font-size: 0.95rem;
-  }
+  .about-text p { color: rgba(245,237,216,0.65); line-height: 1.9; margin-bottom: 20px; font-size: 0.95rem; }
+  .about-text p strong { color: var(--cream); font-weight: 600; }
 
-  .about-text p strong {
-    color: var(--text);
-    font-weight: 500;
-  }
+  .about-facts { display: flex; flex-direction: column; gap: 12px; }
 
-  .about-facts {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .fact-row {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 20px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    transition: all 0.2s;
-  }
-
-  .fact-row:hover {
-    border-color: rgba(0,255,178,0.2);
-    background: rgba(0,255,178,0.03);
-  }
-
-  .fact-icon { font-size: 1.3rem; flex-shrink: 0; }
-
-  .fact-label {
-    font-size: 0.72rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 2px;
-  }
-
-  .fact-value {
-    font-size: 0.9rem;
-    color: var(--text);
-    font-weight: 500;
-  }
+  .fact-row { display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; transition: all 0.2s; }
+  .fact-row:hover { border-color: rgba(232,184,75,0.3); background: rgba(232,184,75,0.05); }
+  .fact-icon { font-size: 1.2rem; flex-shrink: 0; }
+  .fact-label { font-size: 0.68rem; color: rgba(245,237,216,0.35); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2px; font-weight: 600; }
+  .fact-value { font-size: 0.9rem; color: var(--cream); font-weight: 500; }
 
   /* CONTACT */
-  #contact {
-    padding: 100px 0;
-    border-top: 1px solid var(--border);
-  }
+  #contact { padding: 100px 0; border-top: 1px solid var(--border); background: var(--cream-dark); }
 
-  .contact-inner {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 28px;
-    padding: 72px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
+  .contact-inner { background: var(--forest); border-radius: 28px; padding: 72px; text-align: center; position: relative; overflow: hidden; }
+  .contact-inner::before { content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 500px; height: 300px; background: radial-gradient(ellipse, rgba(232,184,75,0.1) 0%, transparent 70%); pointer-events: none; }
 
-  .contact-inner::before {
-    content: '';
-    position: absolute;
-    top: -100px; left: 50%; transform: translateX(-50%);
-    width: 500px; height: 300px;
-    background: radial-gradient(ellipse, rgba(0,255,178,0.07) 0%, transparent 70%);
-    pointer-events: none;
-  }
+  .contact-inner .section-label { color: var(--yellow-soft); }
+  .contact-inner .section-title { color: var(--cream); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+  .contact-inner .section-sub { color: rgba(245,237,216,0.55); margin: 0 auto 48px; }
 
-  .contact-inner .section-title {
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    margin-bottom: 16px;
-  }
+  .contact-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 44px; }
 
-  .contact-inner .section-sub {
-    margin: 0 auto 48px;
-    max-width: 440px;
-  }
+  .btn-yellow { background: var(--yellow); color: var(--brown); padding: 14px 30px; border-radius: 10px; font-weight: 700; font-size: 0.9rem; text-decoration: none; transition: all 0.2s; }
+  .btn-yellow:hover { background: var(--yellow-soft); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(232,184,75,0.3); }
 
-  .contact-actions {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 48px;
-  }
+  .btn-outline-cream { border: 1.5px solid rgba(245,237,216,0.25); color: rgba(245,237,216,0.75); padding: 14px 30px; border-radius: 10px; font-weight: 500; font-size: 0.9rem; text-decoration: none; transition: all 0.2s; }
+  .btn-outline-cream:hover { border-color: var(--cream); color: var(--cream); background: rgba(245,237,216,0.05); }
 
-  .contact-links {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  .contact-links { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+  .contact-links a { color: rgba(245,237,216,0.45); font-size: 0.875rem; text-decoration: none; transition: color 0.2s; display: flex; align-items: center; gap: 6px; }
+  .contact-links a:hover { color: var(--yellow-soft); }
 
-  .contact-links a {
-    color: var(--muted);
-    font-size: 0.875rem;
-    text-decoration: none;
-    transition: color 0.2s;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
+  footer { border-top: 1px solid var(--border); padding: 28px 64px; display: flex; justify-content: space-between; align-items: center; background: var(--cream); position: relative; z-index: 1; }
+  footer p { color: var(--text-muted); font-size: 0.8rem; }
 
-  .contact-links a:hover { color: var(--accent); }
-
-  /* FOOTER */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 28px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  footer p {
-    color: var(--muted);
-    font-size: 0.8rem;
-  }
-
-  /* ANIMATIONS */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* GLOW ORBS */
-  .orb {
-    position: fixed;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  .orb-1 {
-    width: 600px; height: 600px;
-    top: -200px; left: -200px;
-    background: radial-gradient(circle, rgba(0,255,178,0.06) 0%, transparent 65%);
-  }
-
-  .orb-2 {
-    width: 500px; height: 500px;
-    bottom: -150px; right: -150px;
-    background: radial-gradient(circle, rgba(0,102,255,0.06) 0%, transparent 65%);
-  }
+  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
 
   @media (max-width: 768px) {
     nav { padding: 16px 24px; }
@@ -657,24 +371,21 @@
     #hero { padding: 100px 24px 60px; }
     .hero-inner { grid-template-columns: 1fr; gap: 40px; }
     .container { padding: 0 24px; }
-    .skills-grid { grid-template-columns: 1fr; }
-    .projects-grid { grid-template-columns: 1fr; }
-    .project-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+    .skills-grid, .projects-grid, .impact-grid { grid-template-columns: 1fr; }
+    .project-card.wide { grid-column: span 1; }
+    .wide-inner { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .contact-inner { padding: 40px 24px; }
-    footer { flex-direction: column; gap: 12px; padding: 24px; text-align: center; }
+    footer { flex-direction: column; gap: 10px; padding: 24px; text-align: center; }
   }
 </style>
 </head>
 <body>
 
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-
-<!-- NAV -->
 <nav>
-  <div class="nav-logo">MF<span>.</span></div>
+  <div class="nav-logo">M<span>.</span>Fonka</div>
   <ul class="nav-links">
+    <li><a href="#impact">Impact</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#about">About</a></li>
@@ -686,22 +397,22 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
-    <div class="hero-left">
+    <div>
       <div class="hero-badge">
         <div class="hero-dot"></div>
-        OPEN TO WORK · BAMENDA, CAMEROON
+        Open to Work · Bamenda, Cameroon
       </div>
       <h1 class="hero-name">
         Mildred<br>
-        <span class="line2">Fonka.</span>
+        <span class="accent">Fonka.</span>
       </h1>
-      <p class="hero-title">Junior Android Developer & Frontend Engineer</p>
+      <p class="hero-title">Junior Android Developer · Frontend Engineer · Web Developer</p>
       <p class="hero-bio">
-        I build things that work — Android apps, responsive websites, and real-world software for teams that need reliable, thoughtful developers. I learn on the job, ship real code, and care deeply about what I build.
+        I have built the web presence of an entire open source organisation — websites, apps, documentation, blogs, dashboards and translations — from the ground up. I learn fast, ship real code, and care deeply about what I build.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">See My Work →</a>
-        <a href="mailto:mildredfonka@gmail.com" class="btn-ghost">Get In Touch</a>
+        <a href="mailto:mildredfonka@gmail.com" class="btn-forest">Get In Touch</a>
       </div>
       <div class="hero-links">
         <a href="https://github.com/mildrette" target="_blank">GitHub ↗</a>
@@ -714,12 +425,12 @@
       <div class="stat-card fade-in">
         <div class="stat-label">Current Role</div>
         <div class="stat-value">Junior Android Developer</div>
-        <div class="stat-sub">SMSWithoutBorders · Afkanerd</div>
+        <div class="stat-sub">Afkanerd / SMSWithoutBorders</div>
       </div>
       <div class="stat-card fade-in">
-        <div class="stat-label">Contributed To</div>
-        <div class="stat-value">DekuSMS & RelaySMS</div>
-        <div class="stat-sub">Real production apps used globally</div>
+        <div class="stat-label">Websites Built</div>
+        <div class="stat-value">6+ Live Websites</div>
+        <div class="stat-sub">All in production, real users</div>
       </div>
       <div class="stat-card fade-in">
         <div class="stat-label">Currently Learning</div>
@@ -735,16 +446,43 @@
   </div>
 </section>
 
+<!-- IMPACT NUMBERS -->
+<section id="impact">
+  <div class="impact-grid container" style="padding:0 64px;">
+    <div class="impact-item fade-in">
+      <div class="impact-number">6+</div>
+      <div class="impact-label">Live Websites Built</div>
+    </div>
+    <div class="impact-item fade-in">
+      <div class="impact-number">7</div>
+      <div class="impact-label">Languages Translated</div>
+    </div>
+    <div class="impact-item fade-in">
+      <div class="impact-number">3+</div>
+      <div class="impact-label">Years on Documentation</div>
+    </div>
+    <div class="impact-item fade-in">
+      <div class="impact-number">2</div>
+      <div class="impact-label">Android Apps Contributed</div>
+    </div>
+  </div>
+</section>
+
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
     <div class="section-label">What I Know</div>
     <h2 class="section-title">Technical Skills</h2>
-    <p class="section-sub">Built through real work, not just tutorials — every skill here has been used in a real project.</p>
-
+    <p class="section-sub">Built through real work — every skill here has been used in a live, production project.</p>
     <div class="skills-grid">
       <div class="skill-group fade-in">
-        <div class="skill-icon">📱</div>
+       <div class="skill-icon">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/545/545245.png" 
+    width="24" 
+    alt="Mobile Development"
+  >
+</div>
         <div class="skill-group-title">Android Development</div>
         <div class="skill-tags">
           <span class="skill-tag">Kotlin</span>
@@ -755,9 +493,14 @@
           <span class="skill-tag">App Debugging</span>
         </div>
       </div>
-
       <div class="skill-group fade-in">
-        <div class="skill-icon">🌐</div>
+<div class="skill-icon">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" 
+    width="24" 
+    alt="Web Development"
+  >
+</div>
         <div class="skill-group-title">Frontend Development</div>
         <div class="skill-tags">
           <span class="skill-tag">HTML5</span>
@@ -768,122 +511,202 @@
           <span class="skill-tag">Material UI</span>
           <span class="skill-tag">Bootstrap</span>
           <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">i18n</span>
         </div>
       </div>
-
       <div class="skill-group fade-in">
-        <div class="skill-icon">🎨</div>
+      <div class="skill-icon">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" 
+    width="24" 
+    alt="Design"
+  >
+</div>
         <div class="skill-group-title">Design & Tools</div>
         <div class="skill-tags">
           <span class="skill-tag">Figma</span>
           <span class="skill-tag">Canva</span>
           <span class="skill-tag">UI/UX Design</span>
           <span class="skill-tag">Git & GitHub</span>
-          <span class="skill-tag">i18n / Localization</span>
           <span class="skill-tag">Technical Writing</span>
+          <span class="skill-tag">Localization</span>
+          <span class="skill-tag">Documentation</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!--================================================== PROJECTS ======================================================================-->
 <section id="projects">
   <div class="container">
     <div class="section-label">What I've Built</div>
     <h2 class="section-title">Projects</h2>
-    <p class="section-sub">Real work done for real teams — not just side projects.</p>
+    <p class="section-sub">Real work done for real teams — all live in production, all used by real people worldwide.</p>
 
     <div class="projects-grid">
 
-      <div class="project-card featured fade-in">
-        <div>
-          <span class="project-tag">Featured · Live</span>
-          <h3 class="project-title">DekuSMS Website</h3>
-          <p class="project-desc">
-            Redesigned and rebuilt the official DekuSMS landing page — a fully responsive, multilingual single-page website supporting 7 languages including Arabic (RTL) and Russian. Built with React, Material UI, and i18n translation system.
-          </p>
-          <div class="project-stack">
-            <span class="stack-tag">React.js</span>
-            <span class="stack-tag">Material UI</span>
-            <span class="stack-tag">i18n</span>
-            <span class="stack-tag">7 Languages</span>
-            <span class="stack-tag">RTL Support</span>
+      <!-- AFKANERD - wide navy -->
+      <div class="project-card navy-card wide fade-in">
+        <div class="wide-inner">
+          <div>
+            <span class="project-tag" style="background:rgba(232,184,75,0.15);border-color:rgba(232,184,75,0.4);color:var(--yellow)">Built Solo · Live</span>
+            <h3 class="project-title">Afkanerd Company Website</h3>
+            <p class="project-desc">Built the official company website for Afkanerd — the organisation behind DekuSMS and RelaySMS. Designed and developed the full site from scratch, creating a professional web presence for an open source software company.</p>
+            <a href="https://afkanerd.com/" target="_blank" class="project-link">afkanerd.com ↗</a>
+            <div class="project-stack">
+              <span class="stack-tag">React.js</span>
+              <span class="stack-tag">HTML/CSS</span>
+              <span class="stack-tag">Responsive Design</span>
+              <span class="stack-tag">Solo Build</span>
+            </div>
           </div>
-        </div>
-        <div class="project-visual">🌐</div>
-      </div>
-
-      <div class="project-card fade-in">
-        <span class="project-tag">Android · Testing</span>
-        <h3 class="project-title">DekuSMS Android App</h3>
-        <p class="project-desc">
-          Contributed instrumentation tests to the DekuSMS Android app — a real production codebase. Wrote UI tests using Jetpack Compose test rules, validated screen components, and opened PRs on GitHub.
-        </p>
-        <div class="project-stack">
-          <span class="stack-tag">Kotlin</span>
-          <span class="stack-tag">Jetpack Compose</span>
-          <span class="stack-tag">UI Testing</span>
-          <span class="stack-tag">GitHub</span>
+      <div class="project-visual">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/619/619153.png" 
+    width="40" 
+    alt="Company Project"
+  >
+</div>
         </div>
       </div>
 
-      <div class="project-card fade-in">
-        <span class="project-tag">Localization</span>
-        <h3 class="project-title">RelaySMS & DekuSMS Translations</h3>
-        <p class="project-desc">
-          Provided French and Arabic translation contributions to both DekuSMS and RelaySMS apps, improving accessibility for millions of users in francophone and Arabic-speaking regions.
-        </p>
-        <div class="project-stack">
-          <span class="stack-tag">French</span>
-          <span class="stack-tag">Arabic</span>
-          <span class="stack-tag">Localization</span>
-          <span class="stack-tag">i18n</span>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <span class="project-tag">Frontend</span>
-        <h3 class="project-title">Telemetry Dashboard</h3>
-        <p class="project-desc">
-          Developed a functional telemetry dashboard interface with responsive components and improved UI interaction patterns. Built for real data visualization needs.
-        </p>
+      <!-- SMSWITHOUTBORDERS -->
+      <div class="project-card forest-card fade-in">
+        <span class="project-tag">Built · Live</span>
+        <h3 class="project-title">SMSWithoutBorders Website</h3>
+        <p class="project-desc">Built the main website for SMSWithoutBorders — a privacy-first open source organisation. The site serves as the primary public face of the organisation and its mission.</p>
+        <a href="https://smswithoutborders.com/" target="_blank" class="project-link">smswithoutborders.com ↗</a>
         <div class="project-stack">
           <span class="stack-tag">React.js</span>
-          <span class="stack-tag">CSS3</span>
+          <span class="stack-tag">Material UI</span>
           <span class="stack-tag">Responsive</span>
         </div>
       </div>
 
+      <!-- RESEARCH -->
       <div class="project-card fade-in">
-        <span class="project-tag">Documentation</span>
-        <h3 class="project-title">Docasurase Documentation Platform</h3>
-        <p class="project-desc">
-          Structured and improved technical documentation pages — improving clarity, layout, and navigation flow for developer-facing documentation.
-        </p>
+        <span class="project-tag">Built · Live</span>
+        <h3 class="project-title">SMSWithoutBorders Research</h3>
+        <p class="project-desc">Built the research papers section — works both as a standalone platform and as an integrated part of the main SMSWithoutBorders website. Structured to present academic and technical research clearly.</p>
+        <a href="https://smswithoutborders.com/research" target="_blank" class="project-link">smswithoutborders.com/research ↗</a>
         <div class="project-stack">
-          <span class="stack-tag">Technical Writing</span>
-          <span class="stack-tag">HTML</span>
+          <span class="stack-tag">React.js</span>
           <span class="stack-tag">CSS</span>
+          <span class="stack-tag">Standalone + Integrated</span>
         </div>
       </div>
 
+      <!-- RELAYSMS WEBSITE -->
+      <div class="project-card navy-card fade-in">
+        <span class="project-tag" style="background:rgba(232,184,75,0.15);border-color:rgba(232,184,75,0.4);color:var(--yellow)">Collaboration · Live</span>
+        <h3 class="project-title">RelaySMS Website</h3>
+        <p class="project-desc">Collaborated with colleagues to build the official RelaySMS website — the flagship product of SMSWithoutBorders that allows messaging without internet using SMS.</p>
+        <a href="https://relay.smswithoutborders.com/" target="_blank" class="project-link">relay.smswithoutborders.com ↗</a>
+        <div class="project-stack">
+          <span class="stack-tag">React.js</span>
+          <span class="stack-tag">Material UI</span>
+          <span class="stack-tag">i18n</span>
+          <span class="stack-tag">Team Build</span>
+        </div>
+      </div>
+
+      <!-- DOCUMENTATION - wide -->
+      <div class="project-card forest-card wide fade-in">
+        <div class="wide-inner">
+          <div>
+            <span class="project-tag">Sole Maintainer Since 2022 · Live</span>
+            <h3 class="project-title">SMSWithoutBorders Documentation</h3>
+            <p class="project-desc">Took over the official documentation platform in 2022 and have been the sole person maintaining and updating every part of it since then. This is the developer documentation used by all engineers and contributors across the entire organisation — updated continuously for 3+ years.</p>
+            <a href="https://docs.smswithoutborders.com/" target="_blank" class="project-link">docs.smswithoutborders.com ↗</a>
+            <div class="project-stack">
+              <span class="stack-tag">Technical Writing</span>
+              <span class="stack-tag">Documentation</span>
+              <span class="stack-tag">3+ Years</span>
+              <span class="stack-tag">Sole Maintainer</span>
+            </div>
+          </div>
+          <div class="project-visual">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/3145/3145765.png" 
+    width="40" 
+    alt="Documentation Project"
+  >
+</div>
+        </div>
+      </div>
+
+      <!-- BLOG -->
       <div class="project-card fade-in">
-        <span class="project-tag">Blog · Next.js</span>
-        <h3 class="project-title">Next.js Blog Platform</h3>
-        <p class="project-desc">
-          Built a blog using Next.js with modern UI components, page routing, SEO basics, and reusable component architecture.
-        </p>
+        <span class="project-tag">Collaboration · Live</span>
+        <h3 class="project-title">SMSWithoutBorders Blog</h3>
+        <p class="project-desc">Collaborated with colleagues to build the official SMSWithoutBorders blog — the platform used to publish organisation news, technical articles, and project updates.</p>
+        <a href="https://blog.smswithoutborders.com/" target="_blank" class="project-link">blog.smswithoutborders.com ↗</a>
         <div class="project-stack">
           <span class="stack-tag">Next.js</span>
           <span class="stack-tag">React.js</span>
-          <span class="stack-tag">SEO</span>
+          <span class="stack-tag">Team Build</span>
+        </div>
+      </div>
+
+      <!-- TELEMETRY -->
+      <div class="project-card fade-in">
+        <span class="project-tag">Contributed · Live</span>
+        <h3 class="project-title">RelaySMS Telemetry Dashboard</h3>
+        <p class="project-desc">Contributed to the RelaySMS telemetry dashboard — a real-time data visualisation tool for monitoring RelaySMS usage and performance metrics across the platform.</p>
+        <a href="https://telemetry.smswithoutborders.com/" target="_blank" class="project-link">telemetry.smswithoutborders.com ↗</a>
+        <div class="project-stack">
+          <span class="stack-tag">React.js</span>
+          <span class="stack-tag">Data Viz</span>
+          <span class="stack-tag">Dashboard</span>
+        </div>
+      </div>
+
+      <!-- DEKUSMS APP -->
+      <div class="project-card navy-card fade-in">
+        <span class="project-tag" style="background:rgba(232,184,75,0.15);border-color:rgba(232,184,75,0.4);color:var(--yellow)">Android · Testing & Translation</span>
+        <h3 class="project-title">DekuSMS Android App</h3>
+        <p class="project-desc">Contributed instrumentation tests and multilingual translations to the DekuSMS Android app — a 7+ year old production codebase. Tests run on real physical devices and PRs merged to production.</p>
+        <a href="https://github.com/dekusms/DekuSMS-Android" target="_blank" class="project-link">GitHub ↗</a>
+        <div class="project-stack">
+          <span class="stack-tag">Kotlin</span>
+          <span class="stack-tag">Jetpack Compose</span>
+          <span class="stack-tag">Instrumentation Testing</span>
+          <span class="stack-tag">Translations</span>
+        </div>
+      </div>
+
+      <!-- LIB SMSMMS -->
+      <div class="project-card fade-in">
+        <span class="project-tag">Library · Translation</span>
+        <h3 class="project-title">lib_smsmms_android</h3>
+        <p class="project-desc">Contributed translation support to the SMSWithoutBorders SMS/MMS Android library — an open source core library used across the SMSWithoutBorders ecosystem.</p>
+        <a href="https://github.com/smswithoutborders/lib_smsmms_android" target="_blank" class="project-link">GitHub ↗</a>
+        <div class="project-stack">
+          <span class="stack-tag">Android Library</span>
+          <span class="stack-tag">Localization</span>
+          <span class="stack-tag">Translation</span>
+        </div>
+      </div>
+
+      <!-- DEKUSMS WEBSITE -->
+      <div class="project-card forest-card fade-in">
+        <span class="project-tag">Built · Live</span>
+        <h3 class="project-title">DekuSMS Website</h3>
+        <p class="project-desc">Rebuilt the DekuSMS website as a fully responsive, multilingual single-page React application supporting 7 languages including Arabic RTL, Russian, German, and more.</p>
+        <div class="project-stack">
+          <span class="stack-tag">React.js</span>
+          <span class="stack-tag">Material UI</span>
+          <span class="stack-tag">i18n</span>
+          <span class="stack-tag">7 Languages</span>
+          <span class="stack-tag">RTL</span>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+<!-- ========================================================================================================================================================================= -->
 
 <!-- ABOUT -->
 <section id="about">
@@ -892,55 +715,86 @@
       <div class="about-text fade-in">
         <div class="section-label">Who I Am</div>
         <h2 class="section-title">About Me</h2>
-        <p>I am a self-taught developer based in Bamenda, Cameroon, currently working as a <strong>Junior Android Developer</strong> at Afkanerd / SMSWithoutBorders — building and maintaining real apps used by real people across the world.</p>
-        <p>I started with HTML and CSS, taught myself JavaScript and React, contributed to multilingual websites, and am now deep in the world of <strong>Kotlin and Jetpack Compose</strong>. Every skill I have was built by doing, not just studying.</p>
-        <p>I am the kind of developer who learns fast, ships real work, asks honest questions, and cares deeply about what I build. I am <strong>actively looking for opportunities</strong> that will help me grow — remote or otherwise.</p>
+        <p>I am a self-taught developer based in Bamenda, Cameroon. I have built the entire web presence of SMSWithoutBorders and Afkanerd — <strong>6+ live websites</strong>, a documentation platform maintained solo for 3+ years, a telemetry dashboard, and Android app contributions.</p>
+        <p>I started with HTML and CSS, taught myself JavaScript and React, and am now learning <strong>Kotlin and Jetpack Compose</strong> as a Junior Android Developer. Every skill I have was built by doing real work for real teams.</p>
+        <p>I am the kind of developer who <strong>takes ownership</strong> — when I took over the SMSWithoutBorders documentation in 2022, I have updated every single part of it. When I joined the Android team, I shipped real instrumentation tests to a 7-year-old production codebase.</p>
+        <p>I dream of contributing to open source competitions, traveling internationally, and building a remote career that lets me grow as far as my potential can take me.</p>
       </div>
 
-      <div class="about-facts fade-in">
-        <div class="fact-row">
-          <div class="fact-icon">📍</div>
-          <div>
-            <div class="fact-label">Location</div>
-            <div class="fact-value">Bamenda, Cameroon</div>
-          </div>
-        </div>
-        <div class="fact-row">
-          <div class="fact-icon">💼</div>
-          <div>
-            <div class="fact-label">Current Role</div>
-            <div class="fact-value">Junior Android Developer</div>
-          </div>
-        </div>
-        <div class="fact-row">
-          <div class="fact-icon">🎯</div>
-          <div>
-            <div class="fact-label">Goal</div>
-            <div class="fact-value">Remote work · Open source · Travel</div>
-          </div>
-        </div>
-        <div class="fact-row">
-          <div class="fact-icon">🛠️</div>
-          <div>
-            <div class="fact-label">Main Stack</div>
-            <div class="fact-value">Kotlin · React · HTML/CSS</div>
-          </div>
-        </div>
-        <div class="fact-row">
-          <div class="fact-icon">🌍</div>
-          <div>
-            <div class="fact-label">Languages</div>
-            <div class="fact-value">English · French</div>
-          </div>
-        </div>
-        <div class="fact-row">
-          <div class="fact-icon">🐙</div>
-          <div>
-            <div class="fact-label">GitHub</div>
-            <div class="fact-value">github.com/mildrette</div>
-          </div>
-        </div>
-      </div>
+ <div class="about-facts fade-in">
+
+  <div class="fact-row">
+    <div class="fact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="18" alt="Location">
+    </div>
+    <div>
+      <div class="fact-label">Location</div>
+      <div class="fact-value">Bamenda, Cameroon</div>
+    </div>
+  </div>
+
+  <div class="fact-row">
+    <div class="fact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="18" alt="Role">
+    </div>
+    <div>
+      <div class="fact-label">Current Role</div>
+      <div class="fact-value">Junior Android Developer</div>
+    </div>
+  </div>
+
+  <div class="fact-row">
+    <div class="fact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width="18" alt="Websites">
+    </div>
+    <div>
+      <div class="fact-label">Websites Built</div>
+      <div class="fact-value">6+ Live Production Sites</div>
+    </div>
+  </div>
+
+  <div class="fact-row">
+    <div class="fact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/2991/2991112.png" width="18" alt="Documentation">
+    </div>
+    <div>
+      <div class="fact-label">Documentation</div>
+      <div class="fact-value">Sole Maintainer Since 2022</div>
+    </div>
+  </div>
+
+  <div class="fact-row">
+    <div class="fact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="18" alt="Goal">
+    </div>
+    <div>
+      <div class="fact-label">Goal</div>
+      <div class="fact-value">Remote work · Open source · Travel</div>
+    </div>
+  </div>
+
+  <div class="fact-row">
+    <div class="fact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/3898/3898082.png" width="18" alt="Languages">
+    </div>
+    <div>
+      <div class="fact-label">Languages</div>
+      <div class="fact-value">English · French (Fluent)</div>
+    </div>
+  </div>
+
+  <div class="fact-row">
+    <div class="fact-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="18" alt="GitHub">
+    </div>
+    <div>
+      <div class="fact-label">GitHub</div>
+      <div class="fact-value">github.com/mildrette</div>
+    </div>
+  </div>
+
+</div>
+
     </div>
   </div>
 </section>
@@ -951,46 +805,63 @@
     <div class="contact-inner fade-in">
       <div class="section-label">Let's Talk</div>
       <h2 class="section-title">Ready to work<br>together?</h2>
-      <p class="section-sub">I am open to junior roles, freelance projects, remote opportunities, and open source collaborations. Let's build something real.</p>
+      <p class="section-sub">I am open to junior and mid-level roles, freelance projects, remote opportunities, and open source collaborations. Let's build something real.</p>
       <div class="contact-actions">
-        <a href="mailto:mildredfonka@gmail.com" class="btn-primary">Send Me an Email →</a>
-        <a href="https://github.com/mildrette" target="_blank" class="btn-ghost">View GitHub</a>
+        <a href="mailto:mildredfonka@gmail.com" class="btn-yellow">Send Me an Email →</a>
+        <a href="https://github.com/mildrette" target="_blank" class="btn-outline-cream">View GitHub</a>
       </div>
       <div class="contact-links">
-        <a href="mailto:mildredfonka@gmail.com">📧 mildredfonka@gmail.com</a>
-        <a href="https://github.com/mildrette" target="_blank">🐙 github.com/mildrette</a>
-        <a href="#">📍 Bamenda, Cameroon</a>
+<a href="mailto:mildredfonka@gmail.com" style="display:flex; align-items:center; gap:6px;">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/561/561127.png" 
+    alt="Email Icon" 
+    width="16" 
+    height="16"
+  >
+  mildredfonka@gmail.com
+</a>
+
+<a href="https://github.com/mildrette" target="_blank" style="display:flex; align-items:center; gap:6px;">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
+    alt="GitHub Icon" 
+    width="16" 
+    height="16"
+  >
+  github.com/mildrette
+</a>
+        <a href="#" style="display: flex; align-items: center; gap: 6px; text-decoration: none;">
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/684/684908.png" 
+    alt="Location Icon" 
+    width="16" 
+    height="16"
+  >
+  Bamenda, Cameroon
+</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2025 Ndadem Mildred Fonka. Built with care.</p>
+  <p>© 2025 NMF</p>
   <p>Open to opportunities worldwide.</p>
 </footer>
 
 <script>
-  // Scroll animations
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, i * 100);
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
       }
     });
-  }, { threshold: 0.1 });
-
+  }, { threshold: 0.08 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  // Stagger hero right cards
   document.querySelectorAll('.hero-right .stat-card').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.1}s`;
-    setTimeout(() => card.classList.add('visible'), 300 + i * 120);
+    setTimeout(() => card.classList.add('visible'), 400 + i * 120);
   });
 </script>
 </body>
 </html>
-
