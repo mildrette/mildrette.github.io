@@ -1,4 +1,7 @@
-# Mildred Fonka — Developer Portfolio
+# 
+<h1 align="center">
+  <strong>Mildred Fonka — Developer Portfolio</strong>
+</h1>
 
 <p align="center">
   <strong>Software Developer · Android Developer · Frontend Developer</strong>
