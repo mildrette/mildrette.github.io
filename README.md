@@ -3,7 +3,6 @@
 <p align="center">
   <strong>Software Developer · Android Developer · Frontend Developer</strong>
 </p>
-
 <p align="center">
   <a href="https://mildrette.github.io">Live Portfolio</a>
   |
