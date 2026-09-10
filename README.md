@@ -1,4 +1,3 @@
-# 
 <h1 align="center">
   <strong>Mildred Fonka — Developer Portfolio</strong>
 </h1>
