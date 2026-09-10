@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://mildrette.github.io">Live Portfolio</a>
-  ·
+  |
   <a href="https://github.com/mildrette">GitHub</a>
 </p>
 
@@ -21,16 +21,29 @@ I am a software developer with practical experience building **Android applicati
 My development experience includes:
 
 * **Kotlin & Jetpack Compose** for Android development
-* **JavaScript, React.js, HTML, CSS & Bootstrap** for frontend development
+* **JavaScript, React.js, Next.js, HTML, CSS & Bootstrap** for frontend development
+* **Material UI** for building user interfaces
 * **Instrumentation and unit testing**
 * **Application localization and translation**
 * **Git & GitHub**
 * **Figma-to-code UI implementation**
 * **Technical documentation and open-source contribution**
+* **Figma and Canva** for basic UI and visual design
 
 I have contributed to production projects including **RelaySMS, DekaSMS, and LibSMSMMS**, as well as websites and documentation within the **SMSWithoutBorders and Afkanerd ecosystems**.
 
-I am currently learning **Python and backend development**, while continuing to improve my Kotlin and Jetpack Compose skills. My long-term goal is to become a full-stack developer and develop the cybersecurity knowledge needed to build and secure reliable applications.
+I am currently learning **Python and backend development**, while continuing to improve my Kotlin and Jetpack Compose skills. My long-term goal is to become a full-stack developer capable of building both frontend and backend systems and developing the cybersecurity knowledge needed to build and secure reliable applications.
+
+---
+
+## Contact
+
+If you would like to discuss software development, Android development, frontend development, open-source contribution, or collaboration, you can connect with me through:
+
+* **GitHub:** https://github.com/mildrette
+* **Portfolio:** https://mildrette.github.io
+* **LinkedIn:** https://www.linkedin.com/in/mildred-fonka-678b91284/
+* **Email:** mildredfonka1@gmail.com
 
 ---
 
@@ -45,9 +58,11 @@ Contributed to the RelaySMS Android application by:
 * Writing instrumentation tests.
 * Writing unit tests.
 * Working on application strings and localization.
-* Contributing to a production application available to users.
+* Contributing translations into multiple languages.
+* Working within an existing production Android codebase.
+* Contributing to an application that is live and available to users.
 
-**Technologies:** Kotlin · Jetpack Compose · Android · Testing · Git · GitHub · Figma
+**Technologies:** Kotlin · Jetpack Compose · Android · Instrumentation Testing · Unit Testing · Git · GitHub · Figma
 
 [Visit RelaySMS](https://relay.smswithoutborders.com/)
 
@@ -61,6 +76,9 @@ Contributed to the DekaSMS Android application with a focus on:
 * Application strings.
 * Multilingual translation and localization.
 * Working within an existing production Android codebase.
+* Contributing to software used by real users.
+
+**Technologies:** Android · Kotlin · Instrumentation Testing · Localization · Git · GitHub
 
 [Visit DekaSMS](https://dekusms.com/)
 
@@ -74,47 +92,63 @@ Contributed to LibSMSMMS through:
 * Application strings.
 * Translation and localization.
 * Working with an existing Android codebase.
+* Supporting multilingual application experiences.
+
+**Technologies:** Android · Kotlin · Instrumentation Testing · Localization · Git · GitHub
 
 ---
+
+## Web Development
+
+I have contributed to websites and web projects within the **Afkanerd and SMSWithoutBorders ecosystems**.
 
 ### Afkanerd
 
-Contributed to the Afkanerd web ecosystem and documentation.
+Contributed to the Afkanerd website and technical documentation.
 
 [Visit Afkanerd](https://afkanerd.com/)
 
+[View Documentation](https://docs.smswithoutborders.com/)
+
 ---
 
-### SMSWithoutBorders
+### SMSWithoutBorders Ecosystem
 
 Contributed to projects across the SMSWithoutBorders ecosystem, including:
 
 * SMSWithoutBorders website
 * RelaySMS website
 * DekaSMS website
-* Documentation
-* Technical blog
-* Other web and frontend contributions
+* SMSWithoutBorders documentation
+* SMSWithoutBorders technical blog
 
-[SMSWithoutBorders](https://smswithoutborders.com/)
+**Technologies:** HTML · CSS · JavaScript · React.js · Next.js · Bootstrap · Material UI
 
-[Documentation](https://docs.smswithoutborders.com/)
+[Visit SMSWithoutBorders](https://smswithoutborders.com/)
 
-[Blog](https://blog.smswithoutborders.com/)
+[Visit RelaySMS](https://relay.smswithoutborders.com/)
+
+[Visit DekaSMS](https://dekusms.com/)
+
+[Visit Documentation](https://docs.smswithoutborders.com/)
+
+[Visit Blog](https://blog.smswithoutborders.com/)
 
 ---
 
-## Skills
+## Technical Skills
 
 ### Android Development
 
 * Kotlin
 * Jetpack Compose
 * Android Studio
+* Android UI Development
 * Instrumentation Testing
 * Unit Testing
 * UI Implementation
 * Localization
+* Android String Resources
 
 ### Frontend Development
 
@@ -122,7 +156,9 @@ Contributed to projects across the SMSWithoutBorders ecosystem, including:
 * CSS3
 * JavaScript
 * React.js
+* Next.js
 * Bootstrap
+* Material UI
 * Responsive Web Design
 
 ### Development Tools
@@ -132,99 +168,104 @@ Contributed to projects across the SMSWithoutBorders ecosystem, including:
 * Figma
 * Canva
 
-### Currently Learning
+### Testing
 
-* Python
-* Backend Development
-* REST APIs
-* Databases
+* Android Instrumentation Testing
+* Unit Testing
+* Test Implementation and Maintenance
+* Debugging
+* Working with Existing Codebases
+
+### Localization
+
+* Android String Resources
+* Application Translation
+* Multilingual Application Support
+* Localization
+
+---
+
+## Design
+
+I have practical experience using **Figma and Canva** for basic UI and visual design.
+
+My design experience includes:
+
+* Creating small UI designs.
+* Working from Figma design specifications.
+* Translating Figma designs into functional Android interfaces.
+* Designing simple web and application interfaces.
+* Creating basic visual assets with Canva.
+
+---
+
+## Open Source & Collaborative Development
+
+I have experience working with real-world software projects and existing repositories.
+
+### Git & GitHub
+
+* Clone repositories.
+* Explore existing codebases.
+* Read README files and project documentation.
+* Find and understand GitHub Issues.
+* Create feature and fix branches.
+* Switch between branches.
+* Stage and commit changes.
+* Push and pull changes.
+* Use Git stash.
+* Open Pull Requests.
+* Work with existing project conventions.
+* Investigate compiler and build errors.
+* Collaborate within development teams.
+
+---
+
+## Currently Learning
+
+### Python
+
+I am currently strengthening my Python fundamentals as part of my transition toward backend development.
+
+Current areas include:
+
+* Variables
+* Data types
+* User input
+* Type conversion
+* f-strings
+* Conditional statements
+* Lists
+* Dictionaries
+* Loops
+* Functions
+
+### Backend Development
+
+My planned backend learning path includes:
+
+**Python → HTTP → REST APIs → FastAPI → Authentication → Authorization → SQL → PostgreSQL → ORM → Testing → Docker → Linux**
+
+### Cybersecurity
+
+My long-term goal is to combine software development and cybersecurity so that I can not only build applications but also understand how to **secure and fortify them**.
+
+Planned areas include:
+
 * Linux
-* Cybersecurity
-
----
-
-## Design & Development
-
-This portfolio is designed and developed as a custom personal website rather than using a pre-built portfolio template.
-
-The website focuses on:
-
-* Clean and accessible design
-* Responsive layouts
-* Clear project presentation
-* Simple navigation
-* Mobile-friendly interfaces
-* Professional developer branding
-
----
-
-## Project Structure
-
-```text
-mildrette.github.io/
-│
-├── index.html
-├── Learning.html
-├── images/
-│   └── ...
-│
-└── README.md
-```
-
-The project will continue to evolve as new features and sections are added.
-
----
-
-## Roadmap
-
-The portfolio is actively being developed.
-
-### Completed
-
-* [x] Initial portfolio website
-* [x] Responsive layout
-* [x] Project showcase
-* [x] Developer skills section
-* [x] GitHub Pages deployment
-
-### In Progress
-
-* [ ] Redesigned homepage
-* [ ] About section
-* [ ] Experience section
-* [ ] Projects section
-* [ ] Skills section
-* [ ] Dedicated resume page
-* [ ] Downloadable resume
-* [ ] Contact section
-* [ ] Improved mobile navigation
-* [ ] Accessibility improvements
-* [ ] Performance improvements
-
-### Future
-
-* [ ] Backend integration
-* [ ] Personal blog
-* [ ] More detailed project case studies
-* [ ] Additional developer projects
-
----
-
-## Running Locally
-
-Clone the repository:
-
-```bash
-git clone https://github.com/mildrette/mildrette.github.io.git
-```
-
-Enter the project directory:
-
-```bash
-cd mildrette.github.io
-```
-
-Because the current website is built with HTML, CSS, and JavaScript, it can be opened directly in a browser or served with a local development server.
+* Networking
+* TCP/IP
+* DNS
+* HTTP/HTTPS
+* Ports
+* Firewalls
+* Authentication
+* Authorization
+* Sessions
+* Cookies
+* Encryption
+* Hashing
+* Web Application Security
 
 ---
 
@@ -232,22 +273,9 @@ Because the current website is built with HTML, CSS, and JavaScript, it can be o
 
 This portfolio is deployed using **GitHub Pages**.
 
-GitHub Pages supports hosting personal websites and portfolios directly from GitHub repositories.
-
 Live website:
 
 **https://mildrette.github.io**
-
----
-
-## Contact
-
-If you would like to discuss software development, Android development, frontend development, open-source contribution, or collaboration, you can connect with me through:
-
-* **GitHub:** https://github.com/mildrette
-* **Portfolio:** https://mildrette.github.io
-* **LinkedIn:** [Add LinkedIn URL]
-* **Email:** [Add Email]
 
 ---
 
