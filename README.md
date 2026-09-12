@@ -1,19 +1,16 @@
  # Mildred Fonka — Developer Portfolio
 
-<p align="center">
-  <strong>Software Developer · Android Developer · Frontend Developer</strong>
-</p>
-<p align="center">
-  <a href="https://mildrette.github.io">Live Portfolio</a>
-  |
-  <a href="https://github.com/mildrette">GitHub</a>
-</p>
-
+### Software Developer · Android Developer · Frontend Developer
 ---
 
 ## About
 
 Welcome to my personal developer portfolio.
+<p align="center">
+  <a href="https://mildrette.github.io">Live Portfolio</a>
+  |
+  <a href="https://github.com/mildrette">GitHub</a>
+</p>
 
 I am a software developer with practical experience building **Android applications, frontend interfaces, automated tests, and multilingual applications**.
 
